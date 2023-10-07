@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
  * main - main block
  * Description: Test if random is positive, negative or zero
