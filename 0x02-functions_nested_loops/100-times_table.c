@@ -1,9 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_times_table - prints n times table, starting with 0.
- * @n: number of column and row
+ * print_times_table - This function prints n times table, starting with 0.
+ * @n: The number of column and row
  */
 
 void print_times_table(int n)
@@ -44,7 +43,7 @@ void print_times_table(int n)
 
 /**
  * printSpace - print n number of spaces
- * @n: Number of spaces to be printed
+ * @n: The number of spaces to be printed
  */
 void printSpace(int n)
 {
@@ -59,7 +58,7 @@ void printSpace(int n)
 
 /**
  * printInt - print the given int to stdout
- * @n: integer to be printed
+ * @n: the integer to be printed
  */
 void printInt(int n)
 {
