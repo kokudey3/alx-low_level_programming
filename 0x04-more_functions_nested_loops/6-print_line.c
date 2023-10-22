@@ -1,27 +1,30 @@
 #include "main.h"
 
 /**
- * draw_line - draws a horizontal line of a specified length in the terminal.
- * @length: length of the line to be drawn
- *
- * Return: void
+ * print_line - draws a straight line in the terminal.
+ *@n: print int
+ * Return: Always 0.
  */
 
-void draw_line(int length)
+void print_line(int n)
 {
-    int i;
 
-    if (length > 0)
-    {
-        for (i = 0; i < length; i++)
-        {
-            _put_character(95); // Assuming _put_character is your character printing function
-        }
 
-        _put_character('\n');
-    }
-    else
-    {
-        _put_character('\n');
-    }
+int i;
+
+if (n > 0)
+{
+for (i = 0; i < n; i++)
+{
+_putchar (95);
+}
+
+_putchar ('\n');
+}
+
+else
+{
+_putchar ('\n');
+}
+
 }
