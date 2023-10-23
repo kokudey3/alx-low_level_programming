@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * leet - encodes a string into 1337.
+ * leet - Encodes a string to 1337.
  * @str: The string to be encoded.
  *
  * Return: Char
@@ -9,19 +9,20 @@
 
 char *leet(char *str)
 {
-	int i = 0, j;
-	char a[] = {"a4A4e3E3o0O0l1L1t7T7"};
+	int indx1 = 0, indx2;
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	while str[i] != '\0')
+	while (str[indx1])
 	{
-		for (j = 0; j <= 19; j++)
+		for (indx2 = 0; indx2 <= 7; indx2++)
 		{
-			if (((str[i] >= 65 && str[i] <= 90) ||
-			    (str[i] >= 97 && str[i] <= 122)) &&
-			    (str[i] == a[j]))
-				str[i] = a[j + 1];
+			if (str[indx1] == leet[indx2] ||
+			    str[indx1] - 32 == leet[indx2])
+				str[indx1] = indx2 + '0';
 		}
-		i++;
+
+		indx1++;
 	}
+
 	return (str);
 }
